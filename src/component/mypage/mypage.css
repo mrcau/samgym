@@ -1,0 +1,61 @@
+.mypage {
+  background: var(--Ecolor);
+  padding: 10px;
+  height: 100%;
+  font-size: large;
+}
+.mypageForm{
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  margin: auto;
+}
+.mypageInput{
+  margin-bottom: 30px;
+  border-top: none;
+  background: none;
+  border-right: none;
+  border-left: none;
+  text-align: left;
+  padding-left: 5px;
+  font-size: 25px;
+  outline: none;
+}
+.mypageInput.job{
+  margin-bottom: 10px;
+
+}
+.mypagejob{
+  background: white;
+  margin-bottom: 5px;
+  border: 1px solid;
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  text-align: left;
+  padding-left: 5px;
+  margin-bottom: 0;  
+  font-size: 25px;
+}
+
+.mypage .mypageTop{
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  margin-top: 10px;
+  font-size: 4.5vw;
+  font-weight: 900;
+  color: var(--Acolor);
+}
+.mypage .logo{
+  width:10vw;
+  height:10vw;
+  max-width: 80px;
+  max-height: 80px;
+  background: url("./programmer.png") center/cover no-repeat;
+}
+.mypageIcon{
+  font-size: 30px;
+  text-align: left;
+  margin-bottom: 30px;
+}

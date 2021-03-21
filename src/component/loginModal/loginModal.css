@@ -1,0 +1,77 @@
+/* 모달창 */
+.loginModal {
+  height: 50vh;
+  max-width: 800px;
+  padding:20px;
+  overflow-y:auto;
+  margin: auto;
+}
+/* 모달내부 */
+.loginModal .auth{
+  /* height: 90%; */
+  overflow-y: auto;
+}
+.loginModal h4{
+  font-weight:900;
+  color:var(--Acolor);
+  padding-bottom: 30px;
+  transform:rotate(0.03deg);
+}
+.auth form{
+  display: flex;
+  flex-direction: column;
+  width:100%;
+  background: transparent;
+  align-items: center;
+  grid-template-columns: 40px 1fr;
+  border: none;
+  margin-bottom: 2px;
+  padding:0;
+}
+.formGroup{
+  color:var(--Acolor);
+  display : flex;
+  align-items: center;
+  width:100%;
+}
+.formLabel{
+  height:30px;
+  width:50px;
+  line-height: 30px;
+  margin:auto;
+}
+.formInput{
+  flex:auto;
+}
+.auth button{
+  background:var(--Acolor);
+  border: none;
+}
+.auth button:hover{
+  background:var(--Bcolor);
+}
+.btnGoogle{
+  background-color: white;
+  padding:0;
+  width: 40px;
+  margin:0;
+  height: 70px;
+  font-size: 40px;
+  color:var(--Acolor);
+  
+}
+.btnGoogle:hover{
+  color:var(--Bcolor);
+}
+.btnGoogle:active{
+  border: none;
+  outline: none;
+}
+.btnRegister{
+  color: var(--Acolor);
+  text-align: left;
+  height: 50px;
+}
+.btnRegister:hover{
+  color:var(--Bcolor);
+}

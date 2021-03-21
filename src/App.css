@@ -1,0 +1,192 @@
+*{  
+  --Acolor: #990011;
+  --Bcolor :#FCF6F5;  
+  --Ccolor : #424242;
+  --Dcolor : #d90357;
+  --Ecolor : linear-gradient(to right, #8e9eab 0%, #eef2f3  51%, #8e9eab  100%);
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  box-sizing: border-box;
+  font-size: 14px;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  height: 100vh;
+  overflow-y: auto;
+  overflow-x: hidden;
+  background: linear-gradient(to right, #FAEBEF 0%, #eef2f3  51%, #FAEBEF  100%);
+  /* background: var(--Bcolor); */
+}
+
+/* 왼쪽서랍열고닫기 */
+.drawerLeft{
+  width:180px;
+  background:white;
+  position: fixed;
+  padding: 0;
+  left: -185px;
+  height: 100vh;
+  transition: all 300ms;
+  z-index: 2;
+
+}
+.moveDrawerLeft{
+  /* right:-60vw; */
+  transform: translateX(185px);
+}
+.drawerbackLeft{
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0,0,0,0.5);
+  z-index: 1;
+}
+.backNoneLeft{
+  display: none;
+}
+/* 여기까지 서랍 */
+.iconLink:link { color: white; text-decoration: none;}
+.iconLink:visited { color: white; text-decoration: none;}
+.iconLink:hover { color: white; text-decoration: underline;}
+
+/* 위쪽서랍열고닫기 */
+.drawerTop{
+  width: 100vw;
+  height: 50vh;
+  top:-81vh;
+  background:white;
+  position: fixed;
+  padding: 0;
+  transition: all 300ms;
+  z-index: 2;
+}
+.moveDraweTop{
+  /* right:-60vw; */
+  transform: translateY(81vh);
+}
+.drawerbackTop{
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0,0,0,0.5);
+  z-index: 1;
+}
+.backNonTop{
+  display: none;
+}
+/* 여기까지 서랍 */
+
+
+.header {
+  display: flex;
+  font-weight: bold;
+  font-size: large;
+  height: 30px;
+  line-height: 10px;
+  color: var(--Bcolor);
+  background: var(--Acolor);
+  padding: 3px 0;
+}
+.btnmenu{ width: 80px; padding: 0 40px 0 0;}
+.headerT{
+  flex:1; padding: 0;}
+
+.steering{
+    transition: all 300ms;
+    width: 25px;
+  }
+
+.headerT:hover .steering{
+    transform: rotate(180deg) scale(1.2);
+  }
+.rightMenu{ font-size:small;}
+.droplogOut{width:20px !important;}
+main{
+  display: flex ;
+  flex-direction: column;
+  flex: auto;
+  position: relative;
+}
+footer {
+  height: 30px;
+  line-height: 15px;
+  font-size: large;
+  font-weight: 900;
+  color: var(--Bcolor);
+  background: var(--Acolor);
+  padding: 5px;
+}
+.link{
+  font-size: x-large;
+  text-decoration: none;
+  color : var(--Bcolor);
+  outline: none;
+  transition: all 300ms;
+  padding: 0;
+}
+.link:hover{
+  text-decoration: none;
+  color : var(--Bcolor);
+  opacity: 0.5;
+}
+
+.btntitle {
+  font-weight: 700;
+  font-size:small;
+  width: 90%;
+  height: 25px;
+  border-radius: 3px;
+  color: var(--Bcolor);
+  background: var(--Acolor);
+  line-height: 25px;
+}
+
+
+button {
+  font-weight: 700;
+  font-size: medium;
+  border: none !important;
+  outline: none !important;
+  /* border-radius: 5px; */
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  transition: all 300ms;
+  color: var(--Bcolor);
+  background: var(--Acolor);
+}
+button:hover {
+  background: var(--Bcolor);
+  color: var(--Acolor);
+}
+button:active {
+  background: var(--Acolor);
+  color: var(--Bcolor);
+}
+
+
+.btn1 {
+  font-weight: 700;
+  font-size: medium;
+  border: none !important;
+  outline: none !important;
+  border-radius: 5px;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  transition: all 300ms;
+  color: var(--Bcolor);
+  background: var(--Acolor);
+}
+.btn1:hover {
+  background: var(--Bcolor);
+  color: var(--Acolor);
+}
+.btn1:active {
+  background: var(--Acolor);
+  color: var(--Bcolor);
+}

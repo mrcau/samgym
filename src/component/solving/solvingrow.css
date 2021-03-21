@@ -1,0 +1,15 @@
+.solvingArea{
+  height: 100%;
+ outline: none;
+  text-align: left;
+  padding: 5px;
+  resize: none;
+}
+.solvingInput{
+  width: 100%;
+  border: none;
+  margin-right: 5px;
+  border-radius: 3px;
+  outline: none;
+  padding:0 5px;
+}
